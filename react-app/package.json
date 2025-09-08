@@ -1,0 +1,41 @@
+{
+  "name": "stock-moving-average",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "homepage": "https://yourusername.github.io/stock-moving-average",
+  "description": "Stock Moving Averages Visualization - React version of original Streamlit app with real-time data",
+  "keywords": ["stock", "moving-average", "react", "plotly", "finance", "visualization"],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/stock-moving-average.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "plotly.js": "^2.26.0",
+    "react-plotly.js": "^2.6.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5",
+    "gh-pages": "^6.1.0"
+  }
+}

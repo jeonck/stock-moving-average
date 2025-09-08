@@ -20,7 +20,7 @@ export default defineConfig({
         manualChunks: {
           vendor: ['react', 'react-dom'],
           plotly: ['plotly.js', 'react-plotly.js'],
-          utils: ['axios', 'date-fns']
+          utils: ['axios']
         }
       }
     }

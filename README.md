@@ -13,7 +13,7 @@ A React-based web application for visualizing stock moving averages and detectin
 
 ## 📊 Live Demo
 
-Visit: [https://yourusername.github.io/stock-moving-average/](https://yourusername.github.io/stock-moving-average/)
+Visit: [https://jeonck.github.io/stock-moving-average/](https://jeonck.github.io/stock-moving-average/)
 
 ## 🛠 Technology Stack
 

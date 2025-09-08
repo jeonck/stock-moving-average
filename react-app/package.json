@@ -3,14 +3,14 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://yourusername.github.io/stock-moving-average",
+  "homepage": "https://jeonck.github.io/stock-moving-average",
   "description": "Stock Moving Averages Visualization - React version of original Streamlit app with real-time data",
   "keywords": ["stock", "moving-average", "react", "plotly", "finance", "visualization"],
   "author": "Your Name",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/stock-moving-average.git"
+    "url": "https://github.com/jeonck/stock-moving-average.git"
   },
   "scripts": {
     "dev": "vite",

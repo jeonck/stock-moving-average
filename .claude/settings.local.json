@@ -6,7 +6,11 @@
       "Bash(npm run build:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "mcp__github__list_workflow_runs",
+      "Bash(npm run preview:*)",
+      "WebFetch(domain:jeonck.github.io)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
     "ask": []

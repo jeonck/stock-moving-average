@@ -4,8 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // GitHub Pages 배포용 - 저장소 이름에 맞게 수정 필요
-  base: process.env.NODE_ENV === 'production' ? '/stock-moving-average/' : '/',
+  base: '/stock-moving-average/',
   server: {
     port: 5173,
     open: true,
@@ -13,7 +12,9 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: false,
+    sourcemap: true,
+    minify: 'terser',
+    target: 'es2015',
     assetsDir: 'assets',
     rollupOptions: {
       output: {
@@ -26,18 +27,20 @@ export default defineConfig({
     }
   },
   define: {
-    'process.env': {},
-    global: 'globalThis'
+    'process.env': '{}',
+    'global': 'globalThis',
+    '__REACT_DEVTOOLS_GLOBAL_HOOK__': '({ isDisabled: true })'
   },
   optimizeDeps: {
-    include: ['buffer', 'process']
+    include: ['buffer', 'process', 'plotly.js', 'react-plotly.js']
   },
   resolve: {
     alias: {
       buffer: 'buffer',
       process: 'process/browser',
       stream: 'stream-browserify',
-      assert: 'assert'
+      assert: 'assert',
+      util: 'util'
     }
   }
 })

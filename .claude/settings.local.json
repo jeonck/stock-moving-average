@@ -10,7 +10,8 @@
       "mcp__github__list_workflow_runs",
       "Bash(npm run preview:*)",
       "WebFetch(domain:jeonck.github.io)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "mcp__github__get_file_contents"
     ],
     "deny": [],
     "ask": []
